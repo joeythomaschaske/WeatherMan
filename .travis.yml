@@ -1,5 +1,6 @@
 before_deploy:
-  script: npm test
+  script: npm install
+          npm test
 deploy:
   provider: heroku
   api_key:
