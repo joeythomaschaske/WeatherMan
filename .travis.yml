@@ -6,3 +6,6 @@ deploy:
   app: WeatherMan
   on:
     repo: joeythomaschaske/WeatherMan
+  branches:
+    only:
+      - master
