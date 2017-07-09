@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Carousel from './Carousel.js';
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,8 +12,9 @@ class App extends Component {
           <h2>Welcome to WeatherMan</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          To get started, edit <code>src/App.js or test</code> and save to reload.
         </p>
+        <Carousel/>
       </div>
     );
   }
