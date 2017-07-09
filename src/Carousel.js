@@ -9,9 +9,8 @@ class Carousel extends React.Component {
             navigator.geolocation.getCurrentPosition(function(position) {
                 let lat = position.coords.latitude;
                 let long = position.coords.longitude;
-                let query = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + long + '&APPID=' + '8b240da43feb6914a2ebc7e890777055';
+                let query = 'https://api.weatherbit.io/v1.0/forecast/3hourly?lat=' + lat + '&lon=' + long + '&units=I&key=8952d3cc7abd43498e59f4b993fdcac6';
                 console.log(query);
-
                 fetch(query).then(function (res) {
                     console.log('results');
                     console.log(res);
